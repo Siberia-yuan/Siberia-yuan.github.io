@@ -313,7 +313,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-09 12:29:59" itemprop="dateModified" datetime="2020-05-09T12:29:59+08:00">2020-05-09</time>
+                <time title="Modified: 2020-05-10 13:48:32" itemprop="dateModified" datetime="2020-05-10T13:48:32+08:00">2020-05-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -336,7 +336,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="填个坑，有空再补"><a href="#填个坑，有空再补" class="headerlink" title="填个坑，有空再补"></a>填个坑，有空再补</h3>
+          <h2 id="每日一题"><a href="#每日一题" class="headerlink" title="每日一题"></a>每日一题</h2><h3 id="May-10th-题236"><a href="#May-10th-题236" class="headerlink" title="May 10th:题236"></a>May 10th:题236</h3><p>给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。</p>
+<p>百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree" target="_blank" rel="noopener">https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+<p>emmmm这是剑指offer的一道原题吧，比在二叉搜索树里找祖先稍微难一点儿</p>
+<p>‘’’cpp<br>//很蛋疼的一个搜索解法<br>class Solution {<br>public:<br>    vector&lt;TreeNode<em>&gt; pathp;<br>    vector&lt;TreeNode</em>&gt; pathq;<br>    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {<br>        findpathQ(root,p,pathp);<br>        findpathQ(root,q,pathq);<br>        int MIN=min(pathq.size(),pathp.size());<br>        stack&lt;TreeNode<em>&gt; aux;<br>        for(int i=0;i&lt;MIN;i++){<br>            if(pathp[i]==pathq[i]){<br>                aux.push(pathp[i]);<br>            }<br>        }<br>        return aux.top();<br>        //return NULL;<br>    }<br>    bool findpathQ(TreeNode</em> root, TreeNode* target,vector&lt;TreeNode*&gt; &amp;path){<br>        if(root==NULL){<br>            return false;<br>        }<br>        if(root==target){<br>            path.push_back(root);<br>            return true;<br>        }else{<br>            path.push_back(root);<br>            if(!root-&gt;right&amp;&amp;!root-&gt;left){<br>                path.pop_back();<br>                return false;<br>            }else if(root-&gt;right&amp;&amp;!root-&gt;left){<br>                if(findpathQ(root-&gt;right,target,path))                 {<br>                    return true;<br>                }else{<br>                    path.pop_back();<br>                    return false;<br>                }<br>            }else if(!root-&gt;right&amp;&amp;!root-&gt;left){<br>                if(findpathQ(root-&gt;left,target,path))                 {<br>                    return true;<br>                }else{<br>                    path.pop_back();<br>                    return false;<br>                }<br>            }else{<br>                if(findpathQ(root-&gt;right,target,path)||findpathQ(root-&gt;left,target,path))                 {<br>                    return true;<br>                }else{<br>                    path.pop_back();<br>                    return false;<br>                }<br>            }<br>        }<br>    }<br>};</p>
+<p>‘’’</p>
+
       
     </div>
 
