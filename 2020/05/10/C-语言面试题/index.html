@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？答：首先，extern是C&#x2F;C++语言中表明函数和全局变量作用范围的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。  通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。extern “C”是连接申明(linkage declaration),被exte">
+  <meta name="description" content="在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？答：首先，extern是C&#x2F;C++语言中表明函数和全局变量作用范围的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。extern “C”是连接申明(linkage declaration),被extern">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++语言面试题">
 <meta property="og:url" content="http://yoursite.com/2020/05/10/C-%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="Siberia">
-<meta property="og:description" content="在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？答：首先，extern是C&#x2F;C++语言中表明函数和全局变量作用范围的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。  通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。extern “C”是连接申明(linkage declaration),被exte">
+<meta property="og:description" content="在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？答：首先，extern是C&#x2F;C++语言中表明函数和全局变量作用范围的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。extern “C”是连接申明(linkage declaration),被extern">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-10T14:46:26.000Z">
-<meta property="article:modified_time" content="2020-05-10T14:55:05.791Z">
+<meta property="article:modified_time" content="2020-05-10T16:06:06.208Z">
 <meta property="article:author" content="Siberia">
 <meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary">
@@ -188,10 +188,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-10 22:46:26 / Modified: 22:55:05" itemprop="dateCreated datePublished" datetime="2020-05-10T22:46:26+08:00">2020-05-10</time>
+              <time title="Created: 2020-05-10 22:46:26" itemprop="dateCreated datePublished" datetime="2020-05-10T22:46:26+08:00">2020-05-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-11 00:06:06" itemprop="dateModified" datetime="2020-05-11T00:06:06+08:00">2020-05-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -213,7 +219,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="在C-程序中调用被C-编译器编译后的函数，为什么要加extern-“C”？"><a href="#在C-程序中调用被C-编译器编译后的函数，为什么要加extern-“C”？" class="headerlink" title="在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？"></a>在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？</h4><p>答：首先，extern是C/C++语言中表明函数和全局变量作用范围的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。  通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。extern “C”是连接申明(linkage declaration),被extern “C”修饰的变量和函数是按照C语言方式编译和连接的。作为一种面向对象的语言，C++支持函数重载，而过程式语言C则不支持。函数被C++编译后在符号库中的名字与C语言的不同。例如，假设某个函数的原型为：void foo( int x, int y );该函数被C编译器编译后在符号库中的名字为_foo，而C++编译器则会产生像_foo_int_int之类的名字。这样的名字包含了函数名、函数参数数量及类型信息，C++就是靠这种机制来实现函数重载的。所以，可以用一句话概括extern “C”这个声明的真实目的:解决名字匹配问题，实现C++与C的混合编程。</p>
+        <h4 id="在C-程序中调用被C-编译器编译后的函数，为什么要加extern-“C”？"><a href="#在C-程序中调用被C-编译器编译后的函数，为什么要加extern-“C”？" class="headerlink" title="在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？"></a>在C++ 程序中调用被C 编译器编译后的函数，为什么要加extern “C”？</h4><p>答：首先，extern是C/C++语言中表明函数和全局变量作用范围的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。extern “C”是连接申明(linkage declaration),被extern “C”修饰的变量和函数是按照C语言方式编译和连接的。作为一种面向对象的语言，C++支持函数重载，而过程式语言C则不支持。函数被C++编译后在符号库中的名字与C语言的不同。例如，假设某个函数的原型为：void foo( int x, int y );该函数被C编译器编译后在符号库中的名字为_foo，而C++编译器则会产生像_foo_int_int之类的名字。这样的名字包含了函数名、函数参数数量及类型信息，C++就是靠这种机制来实现函数重载的。所以，可以用一句话概括extern “C”这个声明的真实目的:解决名字匹配问题，实现C++与C的混合编程。</p>
+<a id="more"></a>
 <h4 id="2-头文件中的ifndef-define-endif有什么作用？"><a href="#2-头文件中的ifndef-define-endif有什么作用？" class="headerlink" title="2.头文件中的ifndef/define/endif有什么作用？"></a>2.头文件中的ifndef/define/endif有什么作用？</h4><p>答：这是C++预编译头文件保护符，保证即使文件被多次包含，头文件也只定义一次。</p>
 <h4 id="include-lt-file-h-gt-与-＃include-“file-h”的区别？"><a href="#include-lt-file-h-gt-与-＃include-“file-h”的区别？" class="headerlink" title="include&lt;file.h&gt; 与 ＃include “file.h”的区别？"></a>include&lt;file.h&gt; 与 ＃include “file.h”的区别？</h4><p>答：前者是从标准库路径寻找和引用file.h，而后者是从当前工作路径搜寻并引用file.h。<br>4.评价一下C/C++各自的特点<br>答：C语言是一种结构化语言，面向过程，基于算法和数据结构，所考虑的是如何通过一个过程或者函数从输入得到输出；<br>C++是面向对象，基于类、对象和继承，所考虑的是如何构造一个对象模型，让这个模型能够契合与之对应的问题，通过获取对象的状态信息得到输出或实现过程控制。</p>
 <h4 id="const-有什么用途？"><a href="#const-有什么用途？" class="headerlink" title="const 有什么用途？"></a>const 有什么用途？</h4><p>答：在C/C++中，（1）可以定义const常量，（2）修饰函数的返回值和形参；<br>在C++中，还可以修饰函数的定义体，定义类的const成员函数。被const修饰的东西受到强制保护，可以预防意外的变动，提高了程序的健壮性。</p>
