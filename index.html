@@ -160,6 +160,89 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/16/c-%E8%AF%AD%E8%A8%80%E7%BB%86%E8%8A%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/2.jpeg">
+      <meta itemprop="name" content="Siberia">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Siberia">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/16/c-%E8%AF%AD%E8%A8%80%E7%BB%86%E8%8A%82/" class="post-title-link" itemprop="url">c++语言细节</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-05-16 23:49:03" itemprop="dateCreated datePublished" datetime="2020-05-16T23:49:03+08:00">2020-05-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-17 20:52:40" itemprop="dateModified" datetime="2020-05-17T20:52:40+08:00">2020-05-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>1.全数字字符串可以直接比较大小</p>
+<p>2.const传入函数参数起到保护作用</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> i)</span></span>&#123;</span><br><span class="line">    i++; <span class="comment">//error!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.被const修饰需要显式声明extern才可以被外部访问</p>
+<p>4.指针与const</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> * a; <span class="comment">//指向const对象的指针或者说指向常量的指针。</span></span><br><span class="line"><span class="keyword">char</span> <span class="keyword">const</span> * a; <span class="comment">//同上</span></span><br><span class="line"><span class="keyword">char</span> * <span class="keyword">const</span> a; <span class="comment">//指向类型对象的const指针。或者说常指针、const指针。</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="keyword">const</span> a; <span class="comment">//指向const对象的const指针。</span></span><br></pre></td></tr></table></figure>
+<p>const <typename> *pointerID<br>pointerid所指向的内容不能很容易地发生改变</p>
+<p><typename> *const 指针指向的内容不能发生改变</p>
+<p>5.map hash_map unordered_map的差别以及性质</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/May15th%E6%97%A5%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -251,10 +334,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-15 00:15:15 / Modified: 00:31:34" itemprop="dateCreated datePublished" datetime="2020-05-15T00:15:15+08:00">2020-05-15</time>
+              <time title="Created: 2020-05-15 00:15:15" itemprop="dateCreated datePublished" datetime="2020-05-15T00:15:15+08:00">2020-05-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-16 17:11:13" itemprop="dateModified" datetime="2020-05-16T17:11:13+08:00">2020-05-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -283,7 +372,10 @@
 
 2.
 
-3.</code></pre><h1 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h1><h1 id="B-树"><a href="#B-树" class="headerlink" title="B-树"></a>B-树</h1><h1 id="B-树-1"><a href="#B-树-1" class="headerlink" title="B+树"></a>B+树</h1><h1 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h1>
+3.</code></pre><h1 id="B树"><a href="#B树" class="headerlink" title="B树"></a>B树</h1><h1 id="B-树"><a href="#B-树" class="headerlink" title="B-树"></a>B-树</h1><h1 id="B-树-1"><a href="#B-树-1" class="headerlink" title="B+树"></a>B+树</h1><h1 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h1><p>红黑树的性质<br>    性质1：每个节点要么是黑色，要么是红色。<br>    性质2：根节点是黑色。<br>    性质3：每个叶子节点（NIL）是黑色。<br>    性质4：每个红色结点的两个子结点一定都是黑色。<br>    性质5：任意一结点到每个叶子结点的路径都包含数量相同的黑结点</p>
+<p>简介描述的很好<br><a href="https://baijiahao.baidu.com/s?id=1641940303518144126&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1641940303518144126&amp;wfr=spider&amp;for=pc</a></p>
+<p>为什么红黑树查找很高效？留着思考一下这个问题</p>
+
       
     </div>
 
@@ -333,7 +425,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-15 21:20:32" itemprop="dateModified" datetime="2020-05-15T21:20:32+08:00">2020-05-15</time>
+                <time title="Modified: 2020-05-16 12:44:46" itemprop="dateModified" datetime="2020-05-16T12:44:46+08:00">2020-05-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -367,7 +459,8 @@
 8. git reset --hard HEAD^ / git reset --hard HEAD^^...
 8. git remote add xxx</code></pre><h2 id="branch"><a href="#branch" class="headerlink" title="branch"></a>branch</h2><pre><code>1.git checkout -b &lt;branch name&gt; 等于  git branch &lt;branch name&gt; &amp;&amp; git checkout &lt;branch name&gt;
 2.git branch 查看当前所有branch
-3.git branch -d &lt;branche name&gt;</code></pre>
+3.git branch -d &lt;branch name&gt;
+4.git merge &lt;branch name&gt;</code></pre>
       
     </div>
 
@@ -644,10 +737,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-11 12:14:26 / Modified: 12:29:21" itemprop="dateCreated datePublished" datetime="2020-05-11T12:14:26+08:00">2020-05-11</time>
+              <time title="Created: 2020-05-11 12:14:26" itemprop="dateCreated datePublished" datetime="2020-05-11T12:14:26+08:00">2020-05-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-17 20:46:47" itemprop="dateModified" datetime="2020-05-17T20:46:47+08:00">2020-05-17</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -848,81 +947,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/09/May9th%E6%97%A5%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/2.jpeg">
-      <meta itemprop="name" content="Siberia">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Siberia">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/09/May9th%E6%97%A5%E8%AE%B0/" class="post-title-link" itemprop="url">May9th日记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-05-09 12:28:52" itemprop="dateCreated datePublished" datetime="2020-05-09T12:28:52+08:00">2020-05-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-15 15:45:06" itemprop="dateModified" datetime="2020-05-15T15:45:06+08:00">2020-05-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">life</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>今天早上快手的hr打了个电话约了个测试开发面试，我这才发现我以前很多做过的东西都没丢到github上，于是倒腾了一个小时把之前投资组合优化的内容全丢上去了，惊喜的发现以前丢的一个项目被几个中东的小哥star了，多少还是有了一点成就感。</p>
-<p>此后又重新写了一面字节跳动的一道题，算是我最早的一次面试吧。相比于第一次面试的磕磕绊绊，现在做题也有了一点感觉，至少键盘能敲个不停了。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -994,7 +1018,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
