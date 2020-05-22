@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="入则无法家拂士 出则无敌国外患者 国恒亡 快速排序忘记写了😓">
+  <meta name="description" content="入则无法家拂士 出则无敌国外患者 国恒亡 快速排序忘记写了😓快速排序最容易忘的一部分，划分函数。没怎么认真写，凑合着看吧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随想">
 <meta property="og:url" content="http://yoursite.com/2020/05/11/%E9%9A%8F%E6%83%B3/index.html">
 <meta property="og:site_name" content="Siberia">
-<meta property="og:description" content="入则无法家拂士 出则无敌国外患者 国恒亡 快速排序忘记写了😓">
+<meta property="og:description" content="入则无法家拂士 出则无敌国外患者 国恒亡 快速排序忘记写了😓快速排序最容易忘的一部分，划分函数。没怎么认真写，凑合着看吧">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-11T11:32:40.000Z">
-<meta property="article:modified_time" content="2020-05-11T11:34:36.460Z">
+<meta property="article:modified_time" content="2020-05-22T15:22:40.860Z">
 <meta property="article:author" content="Siberia">
 <meta property="article:tag" content="狗屁不通的瞎扯">
 <meta name="twitter:card" content="summary">
@@ -188,10 +188,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-05-11 19:32:40 / Modified: 19:34:36" itemprop="dateCreated datePublished" datetime="2020-05-11T19:32:40+08:00">2020-05-11</time>
+              <time title="Created: 2020-05-11 19:32:40" itemprop="dateCreated datePublished" datetime="2020-05-11T19:32:40+08:00">2020-05-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-22 23:22:40" itemprop="dateModified" datetime="2020-05-22T23:22:40+08:00">2020-05-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -216,7 +222,9 @@
         <p>入则无法家拂士</p>
 <p>出则无敌国外患者</p>
 <p>国恒亡</p>
-<h5 id="快速排序忘记写了😓"><a href="#快速排序忘记写了😓" class="headerlink" title="快速排序忘记写了😓"></a>快速排序忘记写了😓</h5>
+<h5 id="快速排序忘记写了😓"><a href="#快速排序忘记写了😓" class="headerlink" title="快速排序忘记写了😓"></a>快速排序忘记写了😓</h5><p>快速排序最容易忘的一部分，划分函数。<br>没怎么认真写，凑合着看吧</p>
+<a id="more"></a>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dic</span><span class="params">(<span class="keyword">int</span> *ref,<span class="keyword">int</span> length)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> refer=ref[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">int</span> l=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">int</span> r=length<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">int</span> temp;</span><br><span class="line">	<span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">		<span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">			<span class="keyword">if</span>(ref[l]&lt;=refer)&#123;</span><br><span class="line">				l++;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				temp=ref[r];</span><br><span class="line">				ref[r]=ref[l];</span><br><span class="line">				ref[l]=temp;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">			<span class="keyword">if</span>(ref[r]&gt;=refer)&#123;</span><br><span class="line">				r--;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				temp=ref[l];</span><br><span class="line">				ref[l]=ref[r];</span><br><span class="line">				ref[r]=temp;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">   temp=ref[r];</span><br><span class="line">   ref[r]=refer;</span><br><span class="line">   ref[<span class="number">0</span>]=temp;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -315,7 +323,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -328,7 +336,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
