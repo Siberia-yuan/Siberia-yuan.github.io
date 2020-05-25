@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="linux命令查看被占用端口的ip sudo lsof -i:&lt;ip&gt;">
+  <meta name="description" content="linux命令查看被占用端口的ip sudo lsof -i:&lt;ip&gt;linuxC函数使用及apifwrite() fseek() f">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linux笔记速查">
 <meta property="og:url" content="http://yoursite.com/2020/05/23/linux%E7%AC%94%E8%AE%B0%E9%80%9F%E6%9F%A5/index.html">
 <meta property="og:site_name" content="Siberia">
-<meta property="og:description" content="linux命令查看被占用端口的ip sudo lsof -i:&lt;ip&gt;">
+<meta property="og:description" content="linux命令查看被占用端口的ip sudo lsof -i:&lt;ip&gt;linuxC函数使用及apifwrite() fseek() f">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-23T14:49:15.000Z">
-<meta property="article:modified_time" content="2020-05-23T16:30:53.030Z">
+<meta property="article:modified_time" content="2020-05-24T09:18:12.873Z">
 <meta property="article:author" content="Siberia">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
@@ -196,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-24 00:30:53" itemprop="dateModified" datetime="2020-05-24T00:30:53+08:00">2020-05-24</time>
+                <time title="Modified: 2020-05-24 17:18:12" itemprop="dateModified" datetime="2020-05-24T17:18:12+08:00">2020-05-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,7 +220,9 @@
 
       
         <h1 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h1><pre><code>查看被占用端口的ip
-sudo lsof -i:&lt;ip&gt;</code></pre><a id="more"></a>
+sudo lsof -i:&lt;ip&gt;</code></pre><h1 id="linuxC函数使用及api"><a href="#linuxC函数使用及api" class="headerlink" title="linuxC函数使用及api"></a>linuxC函数使用及api</h1><pre><code>fwrite()
+fseek()
+f</code></pre><a id="more"></a>
 <h1 id="linux内存管理"><a href="#linux内存管理" class="headerlink" title="linux内存管理"></a>linux内存管理</h1><h2 id="虚拟地址"><a href="#虚拟地址" class="headerlink" title="虚拟地址"></a>虚拟地址</h2><p>利用虚拟内存技术让每个进程都有4GB 互不干涉的虚拟地址空间。<br>进程初始化分配和操作的都是基于这个「虚拟地址」，只有当进程需要实际访问内存资源的时候才会建立虚拟地址和物理地址的映射，调入物理内存页。</p>
 <p>虚拟地址空间被分为2个部分：<br>    用户空间<br>    内核空间</p>
 <h2 id="物理地址"><a href="#物理地址" class="headerlink" title="物理地址"></a>物理地址</h2><p>略</p>
@@ -253,7 +255,10 @@ bss:未初始化的全局变量
     <a href="/2020/05/22/gcc-gdb%E9%80%9F%E6%9F%A5/" rel="prev" title="gcc_gdb速查">
       <i class="fa fa-chevron-left"></i> gcc_gdb速查
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/25/STL%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" rel="next" title="STL源码解析">
+      STL源码解析 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -312,7 +317,7 @@ bss:未初始化的全局变量
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux命令"><span class="nav-number">1.</span> <span class="nav-text">linux命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux内存管理"><span class="nav-number">2.</span> <span class="nav-text">linux内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟地址"><span class="nav-number">2.1.</span> <span class="nav-text">虚拟地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理地址"><span class="nav-number">2.2.</span> <span class="nav-text">物理地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户空间"><span class="nav-number">2.3.</span> <span class="nav-text">用户空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内核空间"><span class="nav-number">2.4.</span> <span class="nav-text">内核空间</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux命令"><span class="nav-number">1.</span> <span class="nav-text">linux命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linuxC函数使用及api"><span class="nav-number">2.</span> <span class="nav-text">linuxC函数使用及api</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux内存管理"><span class="nav-number">3.</span> <span class="nav-text">linux内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟地址"><span class="nav-number">3.1.</span> <span class="nav-text">虚拟地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理地址"><span class="nav-number">3.2.</span> <span class="nav-text">物理地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户空间"><span class="nav-number">3.3.</span> <span class="nav-text">用户空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内核空间"><span class="nav-number">3.4.</span> <span class="nav-text">内核空间</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -328,7 +333,7 @@ bss:未初始化的全局变量
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
