@@ -20,20 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="先挖个坑,做oj去了，稍后再补充这是对于算法面试可能考到的几个数据结构的总结，不需要完全掌握算法，但是至少得知道性质以及这究竟是什么玩意儿 插入补充几点： 1.在面试的时候，面试官可能会问你某个复杂的数据结构具体实现的细节在哪儿，并且是怎么实现的 例：哈希表原理，解决哈希冲突的方法是什么诸如此类的问题  2.解决哈希冲突： 开放地址法：冲突地址往后移动一个单位之类的  再哈希法：  链地址法：冲突">
+  <meta name="description" content="作者：百哥链接：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;37470941&#x2F;answer&#x2F;1430253099来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 关于计算机网络的一篇好文章，专门记录一下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="非特别常用数据结构">
-<meta property="og:url" content="http://yoursite.com/2020/05/15/%E9%9D%9E%E7%89%B9%E5%88%AB%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
+<meta property="og:title" content="查攻击者手段（转）">
+<meta property="og:url" content="http://yoursite.com/2020/08/30/%E6%9F%A5%E6%94%BB%E5%87%BB%E8%80%85%E6%89%8B%E6%AE%B5%EF%BC%88%E8%BD%AC%EF%BC%89/index.html">
 <meta property="og:site_name" content="Siberia">
-<meta property="og:description" content="先挖个坑,做oj去了，稍后再补充这是对于算法面试可能考到的几个数据结构的总结，不需要完全掌握算法，但是至少得知道性质以及这究竟是什么玩意儿 插入补充几点： 1.在面试的时候，面试官可能会问你某个复杂的数据结构具体实现的细节在哪儿，并且是怎么实现的 例：哈希表原理，解决哈希冲突的方法是什么诸如此类的问题  2.解决哈希冲突： 开放地址法：冲突地址往后移动一个单位之类的  再哈希法：  链地址法：冲突">
+<meta property="og:description" content="作者：百哥链接：https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;37470941&#x2F;answer&#x2F;1430253099来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 关于计算机网络的一篇好文章，专门记录一下">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-14T16:15:15.000Z">
-<meta property="article:modified_time" content="2020-05-30T06:47:55.651Z">
+<meta property="article:published_time" content="2020-08-30T07:24:48.000Z">
+<meta property="article:modified_time" content="2020-08-30T07:27:30.429Z">
 <meta property="article:author" content="Siberia">
-<meta property="article:tag" content="Data structure">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/15/%E9%9D%9E%E7%89%B9%E5%88%AB%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+<link rel="canonical" href="http://yoursite.com/2020/08/30/%E6%9F%A5%E6%94%BB%E5%87%BB%E8%80%85%E6%89%8B%E6%AE%B5%EF%BC%88%E8%BD%AC%EF%BC%89/">
 
 
 <script id="page-configurations">
@@ -46,7 +45,7 @@
   };
 </script>
 
-  <title>非特别常用数据结构 | Siberia</title>
+  <title>查攻击者手段（转） | Siberia</title>
   
 
 
@@ -166,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/%E9%9D%9E%E7%89%B9%E5%88%AB%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/30/%E6%9F%A5%E6%94%BB%E5%87%BB%E8%80%85%E6%89%8B%E6%AE%B5%EF%BC%88%E8%BD%AC%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/2.jpeg">
@@ -179,7 +178,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          非特别常用数据结构
+          查攻击者手段（转）
         </h1>
 
         <div class="post-meta">
@@ -188,24 +187,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-05-15 00:15:15" itemprop="dateCreated datePublished" datetime="2020-05-15T00:15:15+08:00">2020-05-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-30 14:47:55" itemprop="dateModified" datetime="2020-05-30T14:47:55+08:00">2020-05-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
-                </span>
+              <time title="Created: 2020-08-30 15:24:48 / Modified: 15:27:30" itemprop="dateCreated datePublished" datetime="2020-08-30T15:24:48+08:00">2020-08-30</time>
             </span>
 
           
@@ -219,20 +203,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="先挖个坑-做oj去了，稍后再补充"><a href="#先挖个坑-做oj去了，稍后再补充" class="headerlink" title="先挖个坑,做oj去了，稍后再补充"></a>先挖个坑,做oj去了，稍后再补充</h1><p>这是对于算法面试可能考到的几个数据结构的总结，不需要完全掌握算法，但是至少得知道性质以及这<br>究竟是什么玩意儿</p>
-<pre><code>插入补充几点：
-1.在面试的时候，面试官可能会问你某个复杂的数据结构具体实现的细节在哪儿，并且是怎么实现的
-例：哈希表原理，解决哈希冲突的方法是什么诸如此类的问题
+        <p>作者：百哥<br>链接：<a href="https://www.zhihu.com/question/37470941/answer/1430253099" target="_blank" rel="noopener">https://www.zhihu.com/question/37470941/answer/1430253099</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>关于计算机网络的一篇好文章，专门记录一下</p>
+<a id="more"></a>
 
-2.解决哈希冲突：
-开放地址法：冲突地址往后移动一个单位之类的 
-再哈希法： 
-链地址法：冲突区域链表 
-公共溢出区：预先建立一个公共溢出区域，当发生冲突，新地址存放冲突区域</code></pre><h1 id="B-树"><a href="#B-树" class="headerlink" title="B-树"></a>B-树</h1><p>B-树的性质<br>阶为m的b-树的性质：<br>    树的根或者是一片树叶，或者其儿子数目在2-m之间<br>    除根之外，所有非树叶节点的儿子数目在m/2到m之间<br>    所有的树叶都在相同的深度上</p>
-<h1 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h1><p>红黑树的性质<br>    性质1：每个节点要么是黑色，要么是红色。<br>    性质2：根节点是黑色。<br>    性质3：每个叶子节点（NIL）是黑色。<br>    性质4：每个红色结点的两个子结点一定都是黑色。<br>    性质5：任意一结点到每个叶子结点的路径都包含数量相同的黑结点</p>
-<p>简介描述的很好<br><a href="https://baijiahao.baidu.com/s?id=1641940303518144126&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1641940303518144126&amp;wfr=spider&amp;for=pc</a></p>
-<p>为什么红黑树查找很高效？留着思考一下这个问题</p>
-<h1 id="B-树-1"><a href="#B-树-1" class="headerlink" title="B+树"></a>B+树</h1><p>用于搜索</p>
+
+<p>得到真实IP没有想象中难，举个小例子。<br>前几天看到一个问题，是个小朋友问，考试的时候，用猿辅导搜题的答案，老师会不会通过ip来抓到他。<br>其实还真的可以。</p>
+<p>第一步，猿辅导那里有你的访问日志，可以看到你的用户名，以及当时做这个操作时使用的公网ip</p>
+<p>第二步，通过这个公网ip，可以查到，是哪个运营商给你提供的网络，电信还是联通还是移动</p>
+<p>第三步，运营商可以通过这个ip，查到你的公网路由器是哪台。当然，这里的公网路由器，不是你家里那个，而是电信那里的，他们一个路由器带了很多个家庭网络。</p>
+<p>第四步，在公网路由器中，看nat日志，也就是网络地址转换日志，前提是必须有日志服务器留下这些记录。</p>
+<p>第五步，通过nat日志，找到家用路由器的地址。</p>
+<p>第六步，查找公网路由器的dhcp记录，查看家用路由器对应的mac地址。</p>
+<p>第七步，挨家挨户敲门查水表，看谁的路由器是这个mac地址，查获。但是，老师肯定不会真的抓，毕竟整个过程略麻烦，而且涉及用户隐私，运营商不会说查就查的。</p>
+<p>而黑客干坏事就不一样了，公安机关在侦破案件的时候，运营商一定会配合工作。黑客不是小朋友，必然会有些反侦察意识，隐藏身份是最基本的。<br>这里会用到代理，肉鸡等代理就是我在访问你的时候，不直接访问，找个第三方来传话。这样你就不知道我的存在，我对你发起攻击，你还以为是第三方发起攻击。通过前面说的手段，一路摸爬过去，发现只是一个无辜的云主机。那接下来，守株待兔，当黑客再干坏事的时候，在这台云主机上，通过tcp/ip连接，找到真实黑客的ip，然后再去抓他。发现是一个国外的ip，这样排查起来，就需要国外运营商的支持，而国外运营商经常不认国内的公安文件，得联系当地警方或国际刑警，这样需要很长的周期。</p>
+<p>如果只是个小黑客，人家好多大案还没办完，是没有精力配合的，所以到这个时候就不了了之了。如果是个大黑客，国际警察也会重视，国外运营商也会参与，但是大黑客又有更高的手段，他会采用很多个肉鸡一起发动对目标的攻击。肉鸡，就是一台一台的普通电脑，被黑客植入了木马，这台普通电脑在不知情的情况下帮黑客做事情。</p>
+<p>通过传统技术手段，能找到的就是大量肉鸡，这些肉鸡用户也是无辜的，可能自己也觉得玩游戏时候怎么有点卡。此时如果肉鸡只是发动纯ddos攻击，而不是盗取数据发给黑客，那么很难继续溯源，只能采取社会学的方法被攻击的对象往往是个公司，那么这个公司的竞争对手有哪些，有没有得罪过什么人，和侦破普通案件一样，来筛选可能雇黑客的买家。另外一方面，采用钓鱼的方式，就是准备一批豪无防护的电脑，引诱黑客来植入木马，来抓现行。以及严密观察已植入木马的肉鸡，看黑客什么时候来更新木马，因为木马也是种app，要实现新的功能，发动新的攻击，也是要更新的，来抓现行。总之，需要大量的人力、物力、经济成本，最好的还是做好防护，该装防火墙装防火墙，该装waf装waf，规则一定要精细放行，不要图省事permit all，防患于未然才是关键。</p>
 
     </div>
 
@@ -241,9 +227,6 @@
     
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Data-structure/" rel="tag"># Data structure</a>
-          </div>
 
         
 
@@ -251,13 +234,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/05/14/%E8%BD%AC%E8%BD%BDgit%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="(转载)git命令的使用">
-      <i class="fa fa-chevron-left"></i> (转载)git命令的使用
+    <a href="/2020/08/29/mac%E5%90%AF%E5%8A%A8mysql%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3/" rel="prev" title="mac启动mysql错误解决">
+      <i class="fa fa-chevron-left"></i> mac启动mysql错误解决
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/05/16/c-%E8%AF%AD%E8%A8%80%E7%BB%86%E8%8A%82/" rel="next" title="c++语言细节">
-      c++语言细节 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -316,7 +296,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#先挖个坑-做oj去了，稍后再补充"><span class="nav-number">1.</span> <span class="nav-text">先挖个坑,做oj去了，稍后再补充</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-树"><span class="nav-number">2.</span> <span class="nav-text">B-树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#红黑树"><span class="nav-number">3.</span> <span class="nav-text">红黑树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-树-1"><span class="nav-number">4.</span> <span class="nav-text">B+树</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
