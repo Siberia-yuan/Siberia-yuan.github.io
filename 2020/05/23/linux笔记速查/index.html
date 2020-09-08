@@ -28,7 +28,7 @@
 <meta property="og:description" content="记录了一些关于linux的相关笔记，写的比较杂，平时有空可以看看查阅">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-23T14:49:15.000Z">
-<meta property="article:modified_time" content="2020-08-27T12:14:50.254Z">
+<meta property="article:modified_time" content="2020-09-08T04:20:37.772Z">
 <meta property="article:author" content="Siberia">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
@@ -196,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-27 20:14:50" itemprop="dateModified" datetime="2020-08-27T20:14:50+08:00">2020-08-27</time>
+                <time title="Modified: 2020-09-08 12:20:37" itemprop="dateModified" datetime="2020-09-08T12:20:37+08:00">2020-09-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -230,7 +230,9 @@ file &lt;target_file&gt;
 添加用户
 useradd &lt;username&gt;
 计算命令执行的前后时间
-date;&lt;command&gt;;date</code></pre><h1 id="linux-ssh相关"><a href="#linux-ssh相关" class="headerlink" title="linux ssh相关"></a>linux ssh相关</h1><pre><code>启动命令
+date;&lt;command&gt;;date
+查看环境变量
+env</code></pre><h1 id="linux-ssh相关"><a href="#linux-ssh相关" class="headerlink" title="linux ssh相关"></a>linux ssh相关</h1><pre><code>启动命令
 service sshd start
 停止命令
 service sshd stop
@@ -247,7 +249,7 @@ fseek()</code></pre><h1 id="linux内存管理"><a href="#linux内存管理" clas
 bss:未初始化的全局变量
 堆：
 栈：</code></pre><p>上述几种内存区域中数据段、BSS 段、堆通常是被连续存储在内存中，在位置上是连续的，而代码段和栈往往会被独立存放。堆和栈两个区域在 i386 体系结构中栈向下扩展、堆向上扩展，相对而生。</p>
-<p>linux下用size命令看存储区大小<br>    $size <filename></filename></p>
+<p>linux下用size命令看存储区大小<br>    $size <filename></p>
 <h2 id="内核空间"><a href="#内核空间" class="headerlink" title="内核空间"></a>内核空间</h2><p>在 x86 32 位系统里，Linux 内核地址空间是指虚拟地址从 0xC0000000 开始到 0xFFFFFFFF 为止的高端内存地址空间，总计 1G 的容量， 包括了内核镜像、物理页面表、驱动程序等运行在内核空间 。</p>
 
     </div>
@@ -348,7 +350,7 @@ bss:未初始化的全局变量
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

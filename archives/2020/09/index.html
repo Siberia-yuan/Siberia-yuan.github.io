@@ -20,20 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="先挖个坑,做oj去了，稍后再补充这是对于算法面试可能考到的几个数据结构的总结，不需要完全掌握算法，但是至少得知道性质以及这究竟是什么玩意儿 插入补充几点： 1.在面试的时候，面试官可能会问你某个复杂的数据结构具体实现的细节在哪儿，并且是怎么实现的 例：哈希表原理，解决哈希冲突的方法是什么诸如此类的问题  2.解决哈希冲突： 开放地址法：冲突地址往后移动一个单位之类的  再哈希法：  链地址法：冲突">
-<meta property="og:type" content="article">
-<meta property="og:title" content="非特别常用数据结构">
-<meta property="og:url" content="http://yoursite.com/2020/05/15/%E9%9D%9E%E7%89%B9%E5%88%AB%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Siberia">
+<meta property="og:url" content="http://yoursite.com/archives/2020/09/index.html">
 <meta property="og:site_name" content="Siberia">
-<meta property="og:description" content="先挖个坑,做oj去了，稍后再补充这是对于算法面试可能考到的几个数据结构的总结，不需要完全掌握算法，但是至少得知道性质以及这究竟是什么玩意儿 插入补充几点： 1.在面试的时候，面试官可能会问你某个复杂的数据结构具体实现的细节在哪儿，并且是怎么实现的 例：哈希表原理，解决哈希冲突的方法是什么诸如此类的问题  2.解决哈希冲突： 开放地址法：冲突地址往后移动一个单位之类的  再哈希法：  链地址法：冲突">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-14T16:15:15.000Z">
-<meta property="article:modified_time" content="2020-05-30T06:47:55.651Z">
 <meta property="article:author" content="Siberia">
-<meta property="article:tag" content="Data structure">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/15/%E9%9D%9E%E7%89%B9%E5%88%AB%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+<link rel="canonical" href="http://yoursite.com/archives/2020/09/">
 
 
 <script id="page-configurations">
@@ -41,12 +36,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'en'
   };
 </script>
 
-  <title>非特别常用数据结构 | Siberia</title>
+  <title>Archive | Siberia</title>
   
 
 
@@ -159,111 +154,50 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content archive">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/15/%E9%9D%9E%E7%89%B9%E5%88%AB%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/2.jpeg">
-      <meta itemprop="name" content="Siberia">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Siberia">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          非特别常用数据结构
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-05-15 00:15:15" itemprop="dateCreated datePublished" datetime="2020-05-15T00:15:15+08:00">2020-05-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-30 14:47:55" itemprop="dateModified" datetime="2020-05-30T14:47:55+08:00">2020-05-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/computer/" itemprop="url" rel="index"><span itemprop="name">computer</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">哼哼哼，啊啊啊啊啊! 20 posts in total. 废物的博客有什么视奸的必要吗</span>
+      </div>
 
       
-        <h1 id="先挖个坑-做oj去了，稍后再补充"><a href="#先挖个坑-做oj去了，稍后再补充" class="headerlink" title="先挖个坑,做oj去了，稍后再补充"></a>先挖个坑,做oj去了，稍后再补充</h1><p>这是对于算法面试可能考到的几个数据结构的总结，不需要完全掌握算法，但是至少得知道性质以及这<br>究竟是什么玩意儿</p>
-<pre><code>插入补充几点：
-1.在面试的时候，面试官可能会问你某个复杂的数据结构具体实现的细节在哪儿，并且是怎么实现的
-例：哈希表原理，解决哈希冲突的方法是什么诸如此类的问题
-
-2.解决哈希冲突：
-开放地址法：冲突地址往后移动一个单位之类的 
-再哈希法： 
-链地址法：冲突区域链表 
-公共溢出区：预先建立一个公共溢出区域，当发生冲突，新地址存放冲突区域</code></pre><h1 id="B-树"><a href="#B-树" class="headerlink" title="B-树"></a>B-树</h1><p>B-树的性质<br>阶为m的b-树的性质：<br>    树的根或者是一片树叶，或者其儿子数目在2-m之间<br>    除根之外，所有非树叶节点的儿子数目在m/2到m之间<br>    所有的树叶都在相同的深度上</p>
-<h1 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h1><p>红黑树的性质<br>    性质1：每个节点要么是黑色，要么是红色。<br>    性质2：根节点是黑色。<br>    性质3：每个叶子节点（NIL）是黑色。<br>    性质4：每个红色结点的两个子结点一定都是黑色。<br>    性质5：任意一结点到每个叶子结点的路径都包含数量相同的黑结点</p>
-<p>简介描述的很好<br><a href="https://baijiahao.baidu.com/s?id=1641940303518144126&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">https://baijiahao.baidu.com/s?id=1641940303518144126&amp;wfr=spider&amp;for=pc</a></p>
-<p>为什么红黑树查找很高效？留着思考一下这个问题</p>
-<h1 id="B-树-1"><a href="#B-树-1" class="headerlink" title="B+树"></a>B+树</h1><p>用于搜索</p>
-
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Data-structure/" rel="tag"># Data structure</a>
-          </div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-09-07T13:46:25+08:00"
+              content="2020-09-07">
+          09-07
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/09/07/IP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3/" itemprop="url">
+            <span itemprop="name">IP协议详解</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/05/14/%E8%BD%AC%E8%BD%BDgit%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="(转载)git命令的使用">
-      <i class="fa fa-chevron-left"></i> (转载)git命令的使用
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/05/16/c-%E8%AF%AD%E8%A8%80%E7%BB%86%E8%8A%82/" rel="next" title="c++语言细节">
-      c++语言细节 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
@@ -316,7 +250,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#先挖个坑-做oj去了，稍后再补充"><span class="nav-number">1.</span> <span class="nav-text">先挖个坑,做oj去了，稍后再补充</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-树"><span class="nav-number">2.</span> <span class="nav-text">B-树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#红黑树"><span class="nav-number">3.</span> <span class="nav-text">红黑树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-树-1"><span class="nav-number">4.</span> <span class="nav-text">B+树</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
