@@ -28,7 +28,7 @@
 <meta property="og:description" content="记录了一些关于linux的相关笔记，写的比较杂，平时有空可以看看查阅">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-23T14:49:15.000Z">
-<meta property="article:modified_time" content="2020-09-15T15:47:56.265Z">
+<meta property="article:modified_time" content="2020-09-16T12:36:55.855Z">
 <meta property="article:author" content="Siberia">
 <meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
@@ -196,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-09-15 23:47:56" itemprop="dateModified" datetime="2020-09-15T23:47:56+08:00">2020-09-15</time>
+                <time title="Modified: 2020-09-16 20:36:55" itemprop="dateModified" datetime="2020-09-16T20:36:55+08:00">2020-09-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +235,11 @@ date;&lt;command&gt;;date
 env
 传输文件到远程服务器
 scp -r &lt;dirName&gt; &lt;user&gt;@&lt;ip&gt;:&lt;dst path&gt;
-scp &lt;fileName&gt; &lt;user&gt;@&lt;ip&gt;:&lt;dst path&gt;</code></pre><h1 id="linux-网络管理相关"><a href="#linux-网络管理相关" class="headerlink" title="linux 网络管理相关"></a>linux 网络管理相关</h1><h2 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h2><pre><code>netstat -a 列出所有连接
+scp &lt;fileName&gt; &lt;user&gt;@&lt;ip&gt;:&lt;dst path&gt;
+查看系统启动时间
+uptime
+查看系统内核相关信息
+uname -a所有相关信息-r内核信息-m硬件信息</code></pre><h1 id="linux-网络管理相关"><a href="#linux-网络管理相关" class="headerlink" title="linux 网络管理相关"></a>linux 网络管理相关</h1><h2 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h2><pre><code>netstat -a 列出所有连接
 netstat -at 列出所有tcp连接
 netstat -au 列出所有udp连接
 netstat -n 列出连接，禁用域名解析功能
