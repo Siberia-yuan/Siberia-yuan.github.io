@@ -20,20 +20,22 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="课程设计，互联网应用的大作业">
+  <meta name="description" content="实验室新买了一台服务器,贼几把贵的那种用来跑深度学习.今天开组会,老师还专门强调了一下考勤的纪律，最后顺口一提组员能在新买的服务器上开个账号用来做实验玩。于是今晚开始了我的作死之旅。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DNS_System">
-<meta property="og:url" content="http://yoursite.com/2020/05/30/DNS-System/index.html">
+<meta property="og:title" content="记一次惊心动魄的运维案例">
+<meta property="og:url" content="http://yoursite.com/2020/09/29/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%83%8A%E5%BF%83%E5%8A%A8%E9%AD%84%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A1%88%E4%BE%8B/index.html">
 <meta property="og:site_name" content="Siberia">
-<meta property="og:description" content="课程设计，互联网应用的大作业">
+<meta property="og:description" content="实验室新买了一台服务器,贼几把贵的那种用来跑深度学习.今天开组会,老师还专门强调了一下考勤的纪律，最后顺口一提组员能在新买的服务器上开个账号用来做实验玩。于是今晚开始了我的作死之旅。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-30T07:38:20.000Z">
-<meta property="article:modified_time" content="2020-08-27T12:09:00.306Z">
+<meta property="og:image" content="http://yoursite.com/2020/09/29/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%83%8A%E5%BF%83%E5%8A%A8%E9%AD%84%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A1%88%E4%BE%8B/1.jpg">
+<meta property="article:published_time" content="2020-09-29T15:08:03.000Z">
+<meta property="article:modified_time" content="2020-09-29T15:55:44.780Z">
 <meta property="article:author" content="Siberia">
-<meta property="article:tag" content="C++">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/09/29/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%83%8A%E5%BF%83%E5%8A%A8%E9%AD%84%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A1%88%E4%BE%8B/1.jpg">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/30/DNS-System/">
+<link rel="canonical" href="http://yoursite.com/2020/09/29/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%83%8A%E5%BF%83%E5%8A%A8%E9%AD%84%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A1%88%E4%BE%8B/">
 
 
 <script id="page-configurations">
@@ -46,7 +48,7 @@
   };
 </script>
 
-  <title>DNS_System | Siberia</title>
+  <title>记一次惊心动魄的运维案例 | Siberia</title>
   
 
 
@@ -166,7 +168,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/30/DNS-System/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/29/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%83%8A%E5%BF%83%E5%8A%A8%E9%AD%84%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A1%88%E4%BE%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/2.jpeg">
@@ -179,7 +181,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          DNS_System
+          记一次惊心动魄的运维案例
         </h1>
 
         <div class="post-meta">
@@ -188,16 +190,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-05-30 15:38:20" itemprop="dateCreated datePublished" datetime="2020-05-30T15:38:20+08:00">2020-05-30</time>
+              <time title="Created: 2020-09-29 23:08:03 / Modified: 23:55:44" itemprop="dateCreated datePublished" datetime="2020-09-29T23:08:03+08:00">2020-09-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-27 20:09:00" itemprop="dateModified" datetime="2020-08-27T20:09:00+08:00">2020-08-27</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -219,47 +215,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>课程设计，互联网应用的大作业</p>
+        <p>实验室新买了一台服务器,贼几把贵的那种用来跑深度学习.今天开组会,老师还专门强调了一下考勤的纪律，最后顺口一提组员能在新买的服务器上开个账号用来做实验玩。于是今晚开始了我的作死之旅。</p>
 <a id="more"></a>
-<p>参考文档：<a href="https://www.jianshu.com/p/ab539e9a7955" target="_blank" rel="noopener">用c语言实现dns</a></p>
-<p>源代码地址:<a href="https://github.com/Siberia-yuan/DNS_Project" target="_blank" rel="noopener">https://github.com/Siberia-yuan/DNS_Project</a></p>
-<h1 id="实验目标"><a href="#实验目标" class="headerlink" title="实验目标"></a>实验目标</h1><p>深入理解 DNS(Domain Name System)协议的有关知识，结合历次实验课的编程实践， 完成一个基于 Linux 命令行终端的 DNS 系统原型(包括客户端和服务器)，实现英文域名解 析。</p>
-<h1 id="实验要求"><a href="#实验要求" class="headerlink" title="实验要求"></a>实验要求</h1><h2 id="实验要求1"><a href="#实验要求1" class="headerlink" title="实验要求1:"></a>实验要求1:</h2><pre><code>1.实现英文域名的解析，例如: www.bupt.edu.cn; 
-数据库记录示例: 
-www.bupt.edu.cn，86400，IN，A，192.168.1.25 
-bupt.edu.cn，86400，IN，MX，mx.bupt.edu.cn 
-mx.bupt.edu.cn，86400，IN，A，192.168.1.37
+<h1 id="账号创建"><a href="#账号创建" class="headerlink" title="账号创建"></a>账号创建</h1><p>首先我通过学姐给的账号ssh登录实验室主机,并创建了一个账号并设置密码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root123@&lt;hostName&gt;:~$sudo useradd hetengyuan</span><br><span class="line">root123@&lt;hostName&gt;:~$sudo passwd hetengyuan</span><br></pre></td></tr></table></figure>
+<p>这个时候还没有工作目录,切换到home目录创建一个属于我的工作目录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root123@&lt;hostName&gt;:&#x2F;home:sudo mkdir hetengyuan</span><br></pre></td></tr></table></figure>
+<p>基本步骤完成,好戏来了</p>
+<h1 id="添加root权限"><a href="#添加root权限" class="headerlink" title="添加root权限"></a>添加root权限</h1><p>这玩意儿的命令不是记得太清楚了,鸟哥的linux私房菜也是囫囵吞枣看的,平常都是用到了什么命令自己再上网进行查询<br>然后开始在网上找资料,就看到有个sb在帖子说创建完直接修改/etc/sudoers就行了(我也是信了你娘个鬼。。。),根据多年养成的看博客+动手经验,我也跟着这个sb从头到尾操作一遍…</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vim etc&#x2F;sudoers</span><br><span class="line">#一通瞎jb修改</span><br><span class="line">wq!</span><br><span class="line">su hetengyuan</span><br><span class="line">#输入密码</span><br><span class="line">sudo &lt;随便一个命令&gt;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>然后就出问题了,/etc/sudoers默认状态是440,本来就是一个不能轻易修改的文件,只有owner(root),groupuser(root)能查看(还他娘的不建议修改),我还真信了帖子里的sb修改了内容并且退出。现在/etc/sudoers不能正常解析,所有用户的sudo命令全部失灵。这就意味着本来这个文件就需要root权限修改,而sudo权限失灵所有普通用户都失去了修改/etc/sudoer的可能。</p>
+<h1 id="还原方法"><a href="#还原方法" class="headerlink" title="还原方法"></a>还原方法</h1><h2 id="root用户"><a href="#root用户" class="headerlink" title="root用户"></a>root用户</h2><p>“这算个jb啊,我切换到root不就可以改回来了么,还担心个屁”我当时就是这样想的.可惜事实并未能如愿,由于机器刚刷ubuntu系统不久而且实验室懂linux的都实习去了,实验室机器root账号密码为随机生成的一个而并未经过设置。所以在所有账号失去sudo权限的情况下是无法登录root或修改root密码的.<br>我在出于好奇的情况下拿寝室的raspberrypi做了一下实验发现切换到root再用vim修改文件是完全可行的,可惜在实验室机器没root密码,该方法宣告失败。</p>
+<h2 id="pkexec-visudo"><a href="#pkexec-visudo" class="headerlink" title="pkexec visudo"></a>pkexec visudo</h2><p>我在第一种方法失败的情况下,又上网找其他遭遇同样问题的帖子,大部分的帖子是这样说的:<br>    普通一般账号进行登录后切换到/etc目录<br>    在终端输入$ pkexec visudo 并输入登录账户密码就能临时有root权限对sudoers文件进行修改<br>    最后修改完输入ctrl+x即可。<br>emmm怎么说呢,可能别的主机这种方法奏效,但是在实验室主机以及我自己做实验的raspberrypi私人主机上发现,使用pkexec visudo然后输入认证密码还是会出现一个问题:<br><img src="/2020/09/29/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%83%8A%E5%BF%83%E5%8A%A8%E9%AD%84%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A1%88%E4%BE%8B/1.jpg" alt="..."></p>
+<p>是不是无奈了?多少有点犟嘴了家人们<br>然后我尝试了这个帖子<a href="https://www.cnblogs.com/wayneliu007/p/10321542.html" target="_blank" rel="noopener">https://www.cnblogs.com/wayneliu007/p/10321542.html</a><br>,创建两个session,最后还是改回sudo权限来了.(幸亏没让导师知道,不然明天要被搞死)</p>
 
-2.至少支持 4 个顶级域，至少实现三级域名的解析。
-程序需要实现的实体有:client、 至少 6 个 DNS server(含 local DNS server)。
-4 个顶级域名:.cn、.org、.com、.us 
-二-三级域名:自定义(例如:edu.cn，bupt.edu.cn 等等)
-
-3.支持的 Resource Record 类型:A、MX、CNAME;
-对于 MX 类型的查询，要求在 Additional Section 中携带对应 IP 地址;
-
-4.支持的解析方法:迭代解析;
-
-5.传输层协议:
-client 与 local DNS server 之间:TCP;
-DNS server 之间:UDP;
-
-6.应用层协议:DNS
-要求通信过程中使用的所有 DNS 报文必须能够用 wireshark 正确解析;
-
-7. server 的数据维护方式可采用文件;
-
-8. 书写完整的设计文档，参考 Sample-Project-Report.doc;
-
-9. 程序中应包含详细的代码注释，使用良好的编程风格;
-
-10. 程序运行稳定，支持错误处理，如:命令无效、参数缺失、参数错误、查询失败等;</code></pre><h2 id="实验要求2"><a href="#实验要求2" class="headerlink" title="实验要求2:"></a>实验要求2:</h2><pre><code>1.支持 PTR 类型的 Resource Record;
-2. 支持 cache;
-3. 打印查询的 trace 记录(查询路径、服务器响应时间);</code></pre><h1 id="实验环境："><a href="#实验环境：" class="headerlink" title="实验环境："></a>实验环境：</h1><pre><code>1.C 语言以及相关函数库;
-2. gcc 编译器、gdb 调试工具、Wireshark 抓包分析工具;
-3. Linux 操作系统、Linux 下的 nslookup 命令及其 help。</code></pre><h1 id="实验方法："><a href="#实验方法：" class="headerlink" title="实验方法："></a>实验方法：</h1><pre><code>1. 利用 Wireshark 抓包工具，分析 DNS 协议的工作原理;
-2. 分析需求，提出解决方案，划分功能模块;
-3. 实现基于 UDP 和 TCP 的 socket 程序框架，实现英文域名解析服务。</code></pre>
     </div>
 
     
@@ -268,7 +237,7 @@ DNS server 之间:UDP;
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
           </div>
 
         
@@ -277,13 +246,10 @@ DNS server 之间:UDP;
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/05/23/linux%E7%AC%94%E8%AE%B0%E9%80%9F%E6%9F%A5/" rel="prev" title="linux笔记速查">
-      <i class="fa fa-chevron-left"></i> linux笔记速查
+    <a href="/2020/09/27/208%E5%91%A8%E5%91%A8%E8%B5%9B%E8%AE%B0%E5%BD%95/" rel="prev" title="208周周赛记录">
+      <i class="fa fa-chevron-left"></i> 208周周赛记录
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/08/25/QT%E5%BC%80%E5%8F%91%E5%8C%BA%E7%AC%94%E8%AE%B0/" rel="next" title="QT开发区笔记">
-      QT开发区笔记 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -342,7 +308,7 @@ DNS server 之间:UDP;
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#实验目标"><span class="nav-number">1.</span> <span class="nav-text">实验目标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实验要求"><span class="nav-number">2.</span> <span class="nav-text">实验要求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实验要求1"><span class="nav-number">2.1.</span> <span class="nav-text">实验要求1:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验要求2"><span class="nav-number">2.2.</span> <span class="nav-text">实验要求2:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实验环境："><span class="nav-number">3.</span> <span class="nav-text">实验环境：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实验方法："><span class="nav-number">4.</span> <span class="nav-text">实验方法：</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#账号创建"><span class="nav-number">1.</span> <span class="nav-text">账号创建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加root权限"><span class="nav-number">2.</span> <span class="nav-text">添加root权限</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#还原方法"><span class="nav-number">3.</span> <span class="nav-text">还原方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#root用户"><span class="nav-number">3.1.</span> <span class="nav-text">root用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pkexec-visudo"><span class="nav-number">3.2.</span> <span class="nav-text">pkexec visudo</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
